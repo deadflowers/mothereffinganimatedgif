@@ -2,7 +2,7 @@ var ShareGIFWith = function() {};
 
 ShareGIFWith.imgur = function(imageData, imageName, imageTitle, imageCaption, success, error) {
   $.ajax({
-      url: 'http://api.imgur.com/2/upload.json',
+      url: 'https://api.imgur.com/2/upload.json',
       type: 'POST',
       data: {
           type   : 'base64',
