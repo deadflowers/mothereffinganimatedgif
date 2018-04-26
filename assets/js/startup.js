@@ -10,7 +10,7 @@ Modernizr
 
 if( ( !Modernizr.bloburls || !Modernizr.blobbuilder || !Modernizr.download ) && $('#saveasbro').length == 0) {
     var iframe = document.createElement("iframe");
-    iframe.src = "http://saveasbro.com/gif/";
+    iframe.src = "https://saveasbro.com/gif/";
     iframe.setAttribute('style', 'position: absolute; visibility: hidden; left: -999em;');
     iframe.id = "saveasbro";
     document.body.appendChild(iframe);
@@ -23,7 +23,7 @@ var support = FileReaderJS.enabled && Modernizr.draganddrop &&
 if (!support) {
     $("body").addClass("disabled");
     var caniscript = document.createElement('script');
-    caniscript.src = 'http://api.html5please.com/json+filereader+draganddrop+querySelector+postmessage.json?callback=canicallback&texticon&html&readable';
+    caniscript.src = 'https://api.html5please.com/json+filereader+draganddrop+querySelector+postmessage.json?callback=canicallback&texticon&html&readable';
     document.body.appendChild(caniscript);
 } else {
 
